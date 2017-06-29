@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  background-color: #222;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -8,14 +9,28 @@
 }
 
 .App-header {
-  background-color: #222;
   height: 150px;
   padding: 20px;
   color: white;
+  text-align: center;
+  letter-spacing: 1px;
+  border-bottom: solid 2px white;
+  margin-bottom: 20px;
 }
 
-.App-intro {
-  font-size: large;
+.App-content {
+  width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.App-question {
+  color: #02b5a4;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: .9rem;
+  line-height: 1.1rem;
+  margin-bottom: .5rem;
 }
 
 @keyframes App-logo-spin {

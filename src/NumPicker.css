@@ -1,0 +1,90 @@
+.NumPicker-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.NumPicker-option-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.NumPicker-option-item {
+  background-color: #1d434f;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  color: #94a6ac;
+  font-size: .75rem;
+}
+
+.NumPicker-option-item.active {
+  background-color: #9013fe;
+}
+
+.NumPicker-option-item:active,
+.NumPicker-option-item:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.NumPicker-option-item + .NumPicker-option-item {
+  margin-left: .5rem;
+}
+
+.NumPicker-editor-container {
+  position: relative;
+  width: 150px;
+}
+
+.NumPicker-editor-input {
+  color: white;
+  background-color: inherit;
+  outline: none;
+  border: none;
+  border-bottom: solid 1px #19a2a6;
+  box-shadow: none;
+  font-size: 0.8rem;
+  line-height: 1.1rem;
+  width: 100%;
+  padding-right: 1rem;
+}
+
+.NumPicker-editor-input::-webkit-inner-spin-button,
+.NumPicker-editor-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.NumPicker-editor-close {
+  position: absolute;
+  width: .8rem;
+  height: .8rem;
+  background-color: inherit;
+  border: none;
+  right: -1rem;
+  top: -3px;
+  opacity: .7;
+  cursor: pointer;
+}
+
+.NumPicker-editor-close:hover {
+  opacity: 1;
+}
+
+.NumPicker-editor-close::before,
+.NumPicker-editor-close::after {
+  position: absolute;
+  left: 5px;
+  content: ' ';
+  height: .8rem;
+  width: 1px;
+  background-color: #19a2a6;
+}
+
+.NumPicker-editor-close::before {
+  transform: rotate(45deg);
+}
+
+.NumPicker-editor-close::after {
+  transform: rotate(-45deg);
+}
